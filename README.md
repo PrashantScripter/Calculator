@@ -8,3 +8,4 @@
 
 <b>AC</b> stands for: All clear<br>
 <b>C</b> stands for: Clear
+<b>%<b> stands for Modulus operator it's not a percentage.
