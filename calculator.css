@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(255, 223, 223);
+}
+
+#container{
+    background-color: rgb(209, 34, 34);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 3.5rem 2rem;
+    width: 420px;
+    border-radius: 10px;
+    filter: drop-shadow(10px 10px 15px);
+}
+
+.mainInput{
+    width: 100%;
+    padding:0rem 10px;
+    font-size: 3rem;
+    font-weight: 600;
+    box-shadow: 0px 0px 8px 4px black inset;
+    border: none;
+    background-color: rgb(236, 236, 236);
+}
+
+.keypad{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: auto auto auto auto;
+}
+
+.keypad input{
+    padding: 0.9rem;
+    border-radius: 10px;
+    border: none;
+    font-weight: 900;
+    font-size: 1.6rem;
+    cursor: pointer;
+    filter: drop-shadow(5px 5px 6px);
+    background-color: wheat;
+}
+
+.keypad input:active{
+    background-color:rgb(9, 207, 9);
+    transition: all 0.3s ease-in-out;
+}
+
+.keypad .allClear{
+    font-size: 1.2rem;
+}
+
+@media(width <= 700px){
+    .keypad input{
+        padding:0.7rem;
+    }
+
+    #container{
+        padding: 2rem;
+        margin: 2rem;
+    }
+}
+
+@media(width <= 400px){
+    .keypad input{
+        padding:0.3rem 0.9rem;
+    }
+
+    #container{
+        height: min-content;
+    }
+
+    .keypad{
+        gap: 0.8rem;
+    }
+
+    .mainInput{
+        font-size: 2.5rem;
+    }
+}
+
